@@ -15,7 +15,7 @@ jobs:
 
       - name: Download Latest GDACS Feed
         run: |
-          curl -o data/gdacs.geojson https://www.gdacs.org/xml/gdacs.geojson
+          curl -L -o data/gdacs.geojson https://www.gdacs.org/xml/gdacs.geojson
 
       - name: Commit Changes
         run: |
