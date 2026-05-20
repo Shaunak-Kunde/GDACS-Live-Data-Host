@@ -109,9 +109,10 @@ print("\n========== TOTAL CHECK ==========\n")
 print(f"Master File Total Features (geometry objects): {master_total}")
 print(f"Split Files Total Features (geometry objects): {split_total}")
 
-#just the main purpose of this code below
-#that is to check if total geometry objects in original file is same as sum of geometry objects in individual files
-isno of if master_total == split_total:
+#just the main purpose of this code is below
+#that is to check if total features (geometry objects) in original file is same as
+#sum of features(geometry objects) in individual files
+if master_total == split_total:
     print("\nVALIDATION SUCCESS: LHS = RHS")
 else:
     print("\nVALIDATION FAILED: Data mismatch detected")
